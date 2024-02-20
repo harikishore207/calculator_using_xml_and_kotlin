@@ -1,0 +1,32 @@
+ private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
+
+    fun onequalclick(view: View) {}
+
+
+    fun ondigitclick(view: View) {}
+
+
+    fun onoperatorclick(view: View) {}
+
+
+    fun onbackclick(view: View) {}
+
+
+    fun onclearclick(view: View) {}
+
+
+    fun onallclearclick(view: View) {}
+
+-------
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+implementation("net.objecthunter:exp4j:0.4.8")
